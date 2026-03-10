@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components {
+    .categories{
+         @apply border-b-4 border-gray-800 hover:border-blue-500 hover:cursor-pointer;
+    }
+}

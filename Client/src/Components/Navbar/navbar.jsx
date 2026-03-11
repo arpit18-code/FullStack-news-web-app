@@ -150,15 +150,15 @@ export const Navbar = () => {
 
           <div class="flex flex-col px-3 sm:px-6 gap-6 h-full">
             <div class="flex flex-col gap-3 text-lg text-[rgb(0,25,89)]">
-              <div className="flex h-10 my-auto">
+              <div className="flex h-10 my-auto min-w-fit">
                 <FaSearch
-                  className="my-auto w-5 h-5 mx-2 hover:cursor-pointer active:scale-95"
+                  className="text-sm my-auto w-5 h-5 mx-2 hover:cursor-pointer active:scale-95"
                   onClick={() => handleSearchNews(search, setSearch)}
                 ></FaSearch>
                 <input
                   type="text"
                   placeholder="Search Indian news"
-                  className="lg:text-gray-300 text-gray-900 border-2 border-white p-2 rounded"
+                  className="lg:text-gray-300 text-gray-900 border-2 border-white p-2 rounded outline-none"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
                   onKeyUp={(e) => handleSearchOnEnter(e, search, setSearch)}

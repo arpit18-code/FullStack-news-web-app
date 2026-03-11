@@ -56,17 +56,19 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="bg-gray-800 text-white p-3 flex gap-3 w-full overflow-auto left-0 top-0 sticky select-none z-50 justify-between h-25">
+      <div className="bg-gradient-to-t from-gray-800 to-gray-900 text-white p-3 flex gap-3 w-full overflow-auto left-0 top-0 sticky select-none z-50 justify-between h-25 font-poppins">
         <div
           onClick={currentUser ? handleSignOut : handleNavigationToSignIn}
-          className="hover:cursor-pointer hover:bg-slate-700 p-2 rounded border-b-4 border-gray-800 hover:border-blue-500 w-30"
+          className="hover:cursor-pointer hover:bg-slate-700 p-2 rounded border-b-4 border-transparent hover:border-blue-500 w-30"
           style={{ display: currentUser ? "flex-col" : "flex" }}
         >
           {currentUser ? (
             <>
               {" "}
-              <p className="text-center font-bold my-auto">{`Hello ${currentUser.displayName}`}</p>{" "}
-              <p className="text-center">Log out</p>{" "}
+              <p className="text-center font-bold my-auto">
+                {`${currentUser.displayName}`}, Log out
+              </p>{" "}
+              {/* <p className="text-center">Log out</p>{" "} */}
             </>
           ) : (
             <>

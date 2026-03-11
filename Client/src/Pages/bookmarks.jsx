@@ -18,7 +18,7 @@ const BookmarksPage = () => {
   return (
     <>
       <div className="min-h-screen bg-gray-950">
-        <div className="bg-gray-700 text-white p-4">
+        <div className="bg-gradient-to-t from-gray-700 to-gray-900 text-white p-4">
           <MdHome
             className="text-5xl text-white cursor-pointer hover:text-blue-600 block"
             onClick={handleNavigateToHome}
